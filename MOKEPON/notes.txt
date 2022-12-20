@@ -1,0 +1,28 @@
+Please write an web page to play a game using just html elements and a javascript code. The game is called "MOKEPON", and is a  mascot battle game. Please do the code as modular and compact as you can. Employ a lot of emojis to decorate all the messages. The desing guidelines are:
+
+1 The page is divided in 5 sections: main header, mascot selection, battle setup, battle messages, retry button
+1.1 main header shows every time
+1.2 mascot selection shows at the beginning, and dissapear after selecting the mascot
+1.3 battle setup shows after selecting the mascot
+1.4 battle messages add a message each time an attack occurs
+1.5 the retry button appears when the battle is over
+2 The mascot selection section has:
+2.1 radiobuttons to choose a mascot among 3 options: "perroLoco", "gatoCareverga", "canarioHijueputa"
+2.2 There is a button to select the mascot
+2.3 the computer select a random mascot
+2.4 the section dissapears when the mascot is selected
+3 The battle set up section has:
+3.1 A sentence with the name and the remaining lives of the player mascot
+3.2 A sentence with the name and the remaining lives of the computer mascot
+3.3 Lives begin at 3
+3.4 Three buttons to choose the current attack: Fire, Water and Earth
+3.5 To earn points Water beats Fire, Fire beats Earth, Earth beats Water
+3.6 The computer choose a random attack
+3.7 this battle setup section appears only after selecting a mascot
+4 The battle message has:
+4.1 The sentences saying what attack i used, what attack used the computer, and if i win or loose
+4.2 The senteces accumulate one below the other
+4.3 after someone get 3 points the battle finishes, then show a winner message and deactive all the buttons
+5 The retry button section has:
+5.1 a button that appears when the battle finishes
+5.2 the button reload the page when clicked
