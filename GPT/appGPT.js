@@ -91,5 +91,7 @@ function testPlayRound() {
     }
 }
 
-const game = new RockPaperScissorsGame();
-game.playGame();
+function run(){
+    const game = new RockPaperScissorsGame();
+    game.playGame();
+}

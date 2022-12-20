@@ -2,11 +2,64 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title>PPT</title>
+		<style>
+			/* Add some styling for the body element */
+			body {
+			  font-family: Arial, sans-serif;
+			  background-color: #f4f4f4;
+			  color: #333333;
+			  text-align: center;
+			}
+	  
+			/* Add some styling for the section element */
+			section {
+			  max-width: 600px;
+			  margin: auto;
+			  padding: 20px;
+			  background-color: #ffffff;
+			  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+			}
+	  
+			/* Add some styling for the h1 element */
+			h1 {
+			  font-size: 24px;
+			  font-weight: normal;
+			  margin: 0;
+			}
+	  
+			/* Add some styling for the p element */
+			p {
+			  font-size: 16px;
+			  margin: 20px 0;
+			}
+	  
+			/* Add some styling for the button element */
+			button {
+			  display: block;
+			  width: 200px;
+			  height: 40px;
+			  margin: 20px auto;
+			  padding: 0;
+			  border: 0;
+			  border-radius: 4px;
+			  background-color: #3498db;
+			  color: #ffffff;
+			  font-size: 16px;
+			  font-weight: bold;
+			  cursor: pointer;
+			}
+	  
+			/* Add some hover styling for the button element */
+			button:hover {
+			  background-color: #2980b9;
+			}
+		  </style>
 	</head>
 	<body>
 		<section>
 			<h1>Bienvenido</h1>
 			<p>Juega Piedra, Papel o Tijera</p>
+			<button onclick="main()">Jugar</button>
 		</section>
 	</body>
 	<script src="js/app.js" defer></script>
