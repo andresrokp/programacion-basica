@@ -38,6 +38,3 @@ function main(){
     if(wins > looses) alert("HAS GANADO !!! 🥳🎉")
     else alert("HAS PERDIDO 😔⚰️")
 }
-
-// ejecución
-main();
