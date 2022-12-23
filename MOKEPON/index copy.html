@@ -73,11 +73,6 @@
           }
         }
 
-        if(!selectedMascot){      //akap
-            alert("Select a mascot to play");
-            return
-        }
-
         // select a random computer mascot
         const computerMascots = ["perroLoco", "gatoCareverga", "canarioHijueputa"];
         const computerMascot = computerMascots[Math.floor(Math.random() * computerMascots.length)];
@@ -123,14 +118,14 @@
         }
 
         // update the lives of the player and computer mascots
-        let playerMascotLives = parseInt(playerMascotDiv.textContent.split(" ")[3][0]); //akap
-        let computerMascotLives = parseInt(computerMascotDiv.textContent.split(" ")[3][0]); //akap
+        const playerMascotLives = playerMascotDiv.textContent.split(" ")[2];
+        const computerMascotLives = computerMascotDiv.textContent.split(" ")[2];
         if (result === "win") {
-            computerMascotLives--; // akap
-          computerMascotDiv.innerHTML = `💧 ${computerMascotDiv.textContent.split(" ")[1]} (Lives: ${computerMascotLives})`; //akap
+          playerMascotDiv.innerHTML = `🔥 ${playerMascotDiv.textContent.split(" ")[0]} (Lives: ${parseInt(playerMascotLives) + 1})`;
+          computerMascotDiv.innerHTML = `💧 ${computerMascotDiv.textContent.split(" ")[0]} (Lives: ${parseInt(computerMascotLives) - 1})`;
         } else if (result === "lose") {
-            playerMascotLives--; // akap
-          playerMascotDiv.innerHTML = `🔥 ${playerMascotDiv.textContent.split(" ")[1]} (Lives: ${playerMascotLives})`; //akap
+          playerMascotDiv.innerHTML = `🔥 ${playerMascotDiv.textContent.split(" ")[1]} (Lives: ${parseInt(playerMascotLives) - 1})`;
+          computerMascotDiv.innerHTML = `💧 ${computerMascotDiv.textContent.split(" ")[1]} (Lives: ${parseInt(computerMascotLives) + 1})`;
         }
 
         // add a message to the battle messages div
@@ -145,7 +140,7 @@
         battleMessages.innerHTML += `<p>${message}</p>`;
 
         // check if the game is over
-        if (playerMascotLives  === 0 || computerMascotLives === 0) { //akap
+        if (parseInt(playerMascotLives) === 0 || parseInt(computerMascotLives) === 0) {
           // disable the attack buttons
           fireAttackButton.disabled = true;
           waterAttackButton.disabled = true;
