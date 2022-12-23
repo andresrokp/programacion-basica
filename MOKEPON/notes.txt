@@ -26,3 +26,9 @@ Please write an web page to play a game using just html elements and a javascrip
 5 The retry button section has:
 5.1 a button that appears when the battle finishes
 5.2 the button reload the page when clicked
+
+
+Hola. Muy buna la respuesta. Altamente funcional. Solo señalaría los siguientes:
+1. Entiendo que chatGPT se detenga en medio deuna escritura para aguantar la carga de trabajo. Pero al pedirle que continuara, muchas veces reinició la generación del código desde el principio. i.e. no sirvió un mero "continua" sino un "continue the javascript code from: {the last part of the code}.
+2. Tal vez sea por falta de instrucciones, pero generó código con prácticas muy raras. Utilizó la UI como mecanismo de almacenamiento...
+3. El código tuvo 4 líneas con bug. Trata de acceder a la posición [2] de un arreglo que decidió usar, pero en realidad tenía que acceder a la posición [0]
